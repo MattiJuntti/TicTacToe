@@ -1,0 +1,74 @@
+:root {
+    /* color constants */
+    --buttonGreen: #4CAF50;
+    --containterBG: #D3D3D3; /* gray backdrop color for debugging purposes*/
+    --player1color: #FE5F55; /* cooler red */
+    --player2color: #577399; /* cooler blue */
+
+    /* length constants  */
+    --cellSidelen: 100px;
+    --defaultPadding: 10px;
+}
+
+/* Container for holding all UI gameplay elements. */
+container {
+    display: flex;
+    align-items: center;
+    background-color: var(--containterBG);
+    justify-content: center;
+}
+
+/* UI element for holding player / AI inputs labeled 'x' or 'o' */
+.cell {
+    background-color: var(--containterBG);
+    border-radius: 2px;
+    border: 2px solid var(--buttonGreen);
+    color: white;
+    height: var(--cellSidelen);
+    transition-duration: 0.5s;
+    width: var(--cellSidelen);
+}
+
+.cell:hover {
+    background-color: var(--buttonGreen);
+    color: white;
+}
+
+/* UI container for holding 3 x cells */
+row {
+    margin: 1px;
+}
+
+/* UI element container for holding cell rows */
+gametable {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+gameboard {
+    display: flex;
+    flex-direction: row;
+}
+
+playercard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--defaultPadding);
+}
+
+.player1 name {
+    color: var(--player1color);
+}
+
+.player2 name{
+    color: var(--player2color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
