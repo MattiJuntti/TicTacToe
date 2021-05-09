@@ -6,7 +6,7 @@
     --player2color: #577399; /* cooler blue */
 
     /* length constants  */
-    --cellSidelen: 100px;
+    --CellSidelen: 100px;
     --defaultPadding: 10px;
 }
 
@@ -19,27 +19,27 @@ container {
 }
 
 /* UI element for holding player / AI inputs labeled 'x' or 'o' */
-.cell {
+.Cell {
     background-color: var(--containterBG);
     border-radius: 2px;
     border: 2px solid var(--buttonGreen);
     color: white;
-    height: var(--cellSidelen);
+    height: var(--CellSidelen);
     transition-duration: 0.5s;
-    width: var(--cellSidelen);
+    width: var(--CellSidelen);
 }
 
-.cell:hover {
+.Cell:hover {
     background-color: var(--buttonGreen);
     color: white;
 }
 
-/* UI container for holding 3 x cells */
+/* UI container for holding 3 x Cells */
 row {
     margin: 1px;
 }
 
-/* UI element container for holding cell rows */
+/* UI element container for holding Cell rows */
 gametable {
     display: flex;
     flex-direction: column;
@@ -59,11 +59,11 @@ playercard {
     padding: var(--defaultPadding);
 }
 
-.player1 name {
+.player0 name {
     color: var(--player1color);
 }
 
-.player2 name{
+.player1 name{
     color: var(--player2color);
 }
 

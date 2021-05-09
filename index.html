@@ -4,34 +4,34 @@
         <link rel = "stylesheet" href = "css/stylesheet.css">
     </head>
     <body>
-        <header>TicTacToe</header>
+        <header>TicTacToe/Webview.h Test</header>
         <container>
             <gameboard>
-                <playercard class = "player1">
-                <name><p><b>Player 1</b></p></name>
+                <playercard class = "player0">
+                <name><p><b>Player 0</b></p></name>
                 </playercard>
                 <gametable>
                     <!-- 1st row -->
                     <row>
-                        <button type = "button" class = "cell"></button>
-                        <button type = "button" class = "cell"></button>
-                        <button type = "button" class = "cell"></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(1,1);></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(1,2);></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(1,3);></button>
                     </row>
                     <!-- 2nd row -->
                     <row>
-                        <button type = "button" class = "cell"></button>
-                        <button type = "button" class = "cell"></button>
-                        <button type = "button" class = "cell"></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(2,1);></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(2,2);></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(2,3);></button>
                     </row>
                     <!-- 3rd row -->
                     <row>
-                        <button type = "button" class = "cell"></button>
-                        <button type = "button" class = "cell"></button>
-                        <button type = "button" class = "cell"></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(3,1);></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(3,2);></button>
+                        <button type = "button" class = "Cell" onclick = buttonActivation(3,3);></button>
                     </row>
                 </gametable>
-                <playercard class = "player2">
-                    <name><p><b>Player 2</b></p></name>
+                <playercard class = "player1">
+                    <name><p><b>Player 1</b></p></name>
                 </playercard>
             </gameboard>
         </container>
