@@ -1,5 +1,6 @@
 #ifndef CELL_H
 #define CELL_H
+#include <iostream>
 #include <utility>
 
 namespace TicTacToe
@@ -10,6 +11,7 @@ namespace TicTacToe
     public:
         Cell(unsigned x, unsigned y);
         bool state() const;
+        void print() const;
     };
 }
 
