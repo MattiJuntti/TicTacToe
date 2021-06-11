@@ -5,6 +5,7 @@
 
 #include "lib/webview.h"
 
+#include "src/Configuration.h"
 #include "src/Cell.h"
 #include "src/GameTable.h"
 
