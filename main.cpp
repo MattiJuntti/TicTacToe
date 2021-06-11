@@ -6,6 +6,7 @@
 #include "lib/webview.h"
 
 #include "src/Cell.h"
+#include "src/GameTable.h"
 
 namespace fs = std::filesystem;
 

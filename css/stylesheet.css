@@ -40,7 +40,7 @@ row {
 }
 
 /* UI element container for holding Cell rows */
-gametable {
+GameTable {
     display: flex;
     flex-direction: column;
     margin: 5px;
