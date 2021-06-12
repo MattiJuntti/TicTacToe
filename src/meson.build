@@ -1,3 +1,5 @@
 sources = files (
-  'Cell.cpp'
+  'Cell.cpp',
+  'GameTable.cpp',
+  'Configuration.cpp'
 )
