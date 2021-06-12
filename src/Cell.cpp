@@ -1,21 +1,25 @@
 #include "src/Cell.h"
 
-TicTacToe::Cell::Cell(unsigned x, unsigned y) : selected { false }, index { x, y }
+TicTacToe::Cell::Cell(unsigned x, unsigned y) : isSelected { false }, indices { x, y }
 {
-    // ...
 }
 
 bool TicTacToe::Cell::state() const
 {
-    return selected;
+    return isSelected;
 }
 
 void TicTacToe::Cell::print() const
 {
-    std::cout << "x = " << index.at(0) << ", " << "y = " << index.at(1) << std::endl;
+    std::cout << "x = " << indices.at(0) << ", " << "y = " << indices.at(1) << std::endl;
 }
 
-void TicTacToe::Cell::select()
+void TicTacToe::Cell::selected()
 {
-    selected = true;
+    isSelected = true;
+}
+
+std::vector <unsigned> TicTacToe::Cell::index() const
+{
+    return indices;
 }

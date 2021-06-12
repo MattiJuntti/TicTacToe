@@ -6,13 +6,14 @@
 namespace TicTacToe
 {
     class Cell {
-        bool selected;
-        const std::vector <unsigned> index;
+        bool isSelected;
+        const std::vector <unsigned> indices;
     public:
         Cell(unsigned x, unsigned y);
         bool state() const;
         void print() const;
-        void select();
+        void selected();
+        std::vector <unsigned> index() const;
     };
 }
 
