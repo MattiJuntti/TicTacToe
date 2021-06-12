@@ -15,3 +15,8 @@ void TicTacToe::Cell::print() const
     std::cout << "x = " << std::get<0>(index) << ", "
               << "y = " << std::get<1>(index) << std::endl;
 }
+
+void TicTacToe::Cell::select()
+{
+    selected = true;
+}

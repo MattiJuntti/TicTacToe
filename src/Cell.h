@@ -12,6 +12,7 @@ namespace TicTacToe
         Cell(unsigned x, unsigned y);
         bool state() const;
         void print() const;
+        void select();
     };
 }
 
