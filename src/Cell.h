@@ -1,13 +1,13 @@
 #ifndef CELL_H
 #define CELL_H
 #include <iostream>
-#include <utility>
+#include <vector>
 
 namespace TicTacToe
 {
     class Cell {
         bool selected;
-        const std::pair<unsigned, unsigned> index;
+        const std::vector <unsigned> index;
     public:
         Cell(unsigned x, unsigned y);
         bool state() const;

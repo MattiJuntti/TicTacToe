@@ -12,8 +12,7 @@ bool TicTacToe::Cell::state() const
 
 void TicTacToe::Cell::print() const
 {
-    std::cout << "x = " << std::get<0>(index) << ", "
-              << "y = " << std::get<1>(index) << std::endl;
+    std::cout << "x = " << index.at(0) << ", " << "y = " << index.at(1) << std::endl;
 }
 
 void TicTacToe::Cell::select()
