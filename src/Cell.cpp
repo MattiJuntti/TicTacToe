@@ -23,3 +23,8 @@ std::vector <unsigned> TicTacToe::Cell::index() const
 {
     return indices;
 }
+
+std::ostream& operator<<(std::ostream& out, const TicTacToe::Cell& cell)
+{
+    return out << "(" << cell.index().at(0) << "," << cell.index().at(1) << ") : " << cell.state();
+}

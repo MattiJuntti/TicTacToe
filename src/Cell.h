@@ -17,4 +17,6 @@ namespace TicTacToe
     };
 }
 
+std::ostream& operator<<(std::ostream&, const TicTacToe::Cell&);
+
 #endif // CELL_H
