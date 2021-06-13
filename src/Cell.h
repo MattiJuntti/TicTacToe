@@ -12,7 +12,7 @@ namespace TicTacToe
         Cell(unsigned x, unsigned y);
         bool state() const;
         void print() const;
-        void selected();
+        void select();
         std::vector <unsigned> index() const;
     };
 }
