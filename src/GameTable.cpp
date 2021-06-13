@@ -9,6 +9,23 @@ TicTacToe::GameTable::GameTable(const TicTacToe::Configuration& config)
         {
             row.push_back(TicTacToe::Cell{i,j});
         }
-        cells.push_back(row);
+        cell_grid.push_back(row);
+    }
+}
+
+void TicTacToe::GameTable::translateToSelection (const unsigned& x, const unsigned& y)
+{
+    cell_grid.at(x - 1).at(y - 1).select();
+}
+
+void TicTacToe::GameTable::printCells() const
+{
+    for (const auto& row : cell_grid)
+    {
+        for (const auto& cell : row)
+        {
+            std::cout << cell << " ";
+        }
+        std::cout << "\n";
     }
 }
