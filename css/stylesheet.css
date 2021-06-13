@@ -63,7 +63,7 @@ playercard {
     color: var(--player1color);
 }
 
-.player1 name{
+.player1 name {
     color: var(--player2color);
 }
 
